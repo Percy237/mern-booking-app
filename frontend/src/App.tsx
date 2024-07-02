@@ -48,8 +48,8 @@ function App() {
             </Layout>
           }
         />
-        {
-          isLoggedIn && <>
+     
+          
           <Route path="/add-hotel"
           element={
             <Layout>
@@ -57,8 +57,8 @@ function App() {
             </Layout>
           }
           />
-          </>
-        }
+   
+          
         <Route path="/my-hotels"
           element={
             <Layout>
