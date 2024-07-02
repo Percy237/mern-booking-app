@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import SignIn from "./pages/SignIn";
 import AddHotels from "./pages/AddHotels";
 import { useAppContext } from "./context/AppContext";
+import MyHotels from "./pages/MyHotels"
 
 function App() {
   const {isLoggedIn} = useAppContext()

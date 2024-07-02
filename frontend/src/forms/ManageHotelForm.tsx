@@ -19,12 +19,12 @@ export type HotelFormData = {
   childCount: number;
 };
 
-type Props = {
-  onSave: (hotelFormData:FormData) => void
+type ManageHotelFormProps = {
+  onSave: (hotelFormData:FormData) => void;
   isLoading: boolean;
 }
 
-const ManageHotelForm = ({onSave, isLoading}) => {
+const ManageHotelForm: React.FC<ManageHotelFormProps> = ({onSave, isLoading}) => {
   const formMethods = useForm<HotelFormData>();
   const {handleSubmit} = formMethods;
 
